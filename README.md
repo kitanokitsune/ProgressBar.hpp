@@ -39,7 +39,7 @@ Include the **ProgressBar.hpp** in your C++ source file and instantiate *Progras
 | **set_title**(*title*) | Set the bar title. |
 | **set_bracketstyle**(*lbra*='\|', *rbra*='\|') | Set bracket characters. |
 | **use_percentstyle**()<br>**use_ratiostyle**() | Select percentstyle or ratio style. The percet style such as "**50\%**" is used after **use_percentstyle**() is called, and the ratio style such as "**500/1000**" is used after **use_ratiostyle**() is called. |
-| **set_cursor_visible**(**true** or **false**) | Show/Hide a cursor.<br>**set_cursor_visible**(**false**) is called in **start**() and **set_cursor_visible**(**true**) is called when internal counter readches *totalcount*. |
+| **set_cursor_visible**(**true** or **false**) | Show/Hide a cursor.<br>**set_cursor_visible**(**false**) is called in **start**() and **set_cursor_visible**(**true**) is called when internal counter reaches *totalcount*. |
 
 
 # Note
