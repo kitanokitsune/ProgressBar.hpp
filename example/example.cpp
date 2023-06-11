@@ -9,6 +9,7 @@ int main(void) {
     unsigned long total = 123L;
 
     std::printf("\n* Progressbar examples *\n\n");
+
     /* (1) default style */
     ProgressBar pbar(total, "[DEFAULT]: ");
     pbar.start();  /* pbar.start() resets internal counter and disables a cursor */
@@ -36,7 +37,7 @@ int main(void) {
         ++pbar;
     }
 
-    /* (4) change bar style1 */
+    /* (4) change bar style 1 */
     pbar.set_title("[CHANGE BAR STYLE 1]: ");
     pbar.set_bracketstyle(); /* reset bracket style */
     pbar.set_barstyle('-', '>', ' ');
@@ -46,7 +47,7 @@ int main(void) {
         pbar.update();
     }
 
-    /* (5) change bar style1 */
+    /* (5) change bar style 2 */
     pbar.set_title("[CHANGE BAR STYLE 2]: ");
     pbar.set_bracketstyle(); /* reset bracket style */
     pbar.set_barstyle('#', ' ', ' ');
