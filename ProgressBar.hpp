@@ -29,6 +29,7 @@ SOFTWARE.
 ******************************************************************************/
 
 #include <stdio.h>  /* <cstdio> causes errors to BCC 5.5 */
+#include <limits.h>
 #include <string>
 #include <iomanip>
 
