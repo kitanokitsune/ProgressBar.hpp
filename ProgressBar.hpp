@@ -54,7 +54,7 @@ SOFTWARE.
 #define pbar_round(x) static_cast<int>(x + 0.5)   /* NOTE: x >= 0.0 */
 #define pbar_floor(x) static_cast<int>(x)         /* NOTE: x >= 0.0 */
 
-#define MAXDIGITS(x) ((int)((sizeof(x)*1233UL)>>9)+1) /* NOTE: 266 >= sizeof(x) */
+#define MAXDIGITS(x) ((int)((sizeof(x)*CHAR_BIT*1233UL)>>12)+1) /* NOTE: 680 >= sizeof(x)*CHAR_BIT */
 #define MAXDIGITS_ULONG  MAXDIGITS(unsigned long)
 
 
